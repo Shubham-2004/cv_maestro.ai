@@ -1,0 +1,64 @@
+.started_body {
+    background-image: url("https://theacademic.com/wp-content/uploads/2023/09/neliti_AI_in_teaching_and_learning_4K_ultrarestics_28f38230-ca84-411c-ad90-af1e1000e1b4.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.started_container{
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: auto;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.started_text {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.started_button {
+    background-color: #ffd503;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 20px 0;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 6px 15px rgba(255, 213, 3, 0.3);
+}
+
+.started_button:hover {
+    background-color: #ffc000;
+    box-shadow: 0px 8px 20px rgba(255, 213, 3, 0.5);
+    transform: scale(1.05);
+}
+
+.started_button:active {
+    transform: scale(0.98);
+    box-shadow: none;
+}
