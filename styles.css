@@ -37,7 +37,7 @@
 }
 
 .started_button {
-    background-color: #ffd503;
+    background-color: #18ff03;
     border: none;
     color: rgb(0, 0, 0);
     padding: 15px 32px;
@@ -53,7 +53,7 @@
 }
 
 .started_button:hover {
-    background-color: #ffc000;
+    background-color: #66ff00;
     box-shadow: 0px 8px 20px rgba(255, 213, 3, 0.5);
     transform: scale(1.05);
 }
