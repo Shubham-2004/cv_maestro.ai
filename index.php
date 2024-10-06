@@ -9,7 +9,7 @@
 <body class="started_body">
     <div class="started_container">
         <h1 class="started_text">CV Maestro.AI</h1>
-        <a href="signup.html" >
+        <a href="signup.php" >
             <button class="started_button">Get Started</button>
         </a>
     </div>
