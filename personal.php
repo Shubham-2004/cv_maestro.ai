@@ -1,3 +1,20 @@
+<?php
+// Start the session
+session_start();
+
+// Check if form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Save personal details to session
+    $_SESSION['name'] = $_POST['name'];
+    $_SESSION['birthdate'] = $_POST['birthdate'];
+    $_SESSION['email'] = $_POST['email'];
+
+    // Redirect to the next form (bio.php)
+    header("Location: bio.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,16 +27,8 @@
     <div class="container">
         <h2>Personal Details</h2>
         
-        <!-- Navigation Links -->
-        <div class="form-navigation">
-            <a href="bio.html">Bio</a>
-            <a href="education.html">Education</a>
-            <a href="experience.html">Experience</a>
-            <a href="achievements.html">Achievements</a>
-            <a href="submit.html">Review & Submit</a>
-        </div>
-        
-        <form>
+        <!-- Form to collect user data -->
+        <form method="POST" action="">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="Your Name" required>
 
@@ -31,7 +40,7 @@
 
             <!-- Navigation -->
             <div class="nav-buttons">
-                <a href="bio.html" class="next-btn">Next</a>
+                <button type="submit">Next</button>
             </div>
         </form>
     </div>
